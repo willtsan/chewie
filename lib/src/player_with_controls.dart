@@ -50,7 +50,7 @@ class PlayerWithControls extends StatelessWidget {
     BuildContext context,
     ChewieController chewieController,
   ) {
-    return chewieController.showControls
+    return chewieController.showControls && chewieController.isFullScreen
         ? chewieController.customControls != null
             ? chewieController.customControls
             : Theme.of(context).platform == TargetPlatform.android
